@@ -10825,6 +10825,7 @@ article.article .content h2 {
 }
 article.article .content h3 {
   font-size: 1.1em;
+  text-decoration: underline;
 }
 article.article .content h4 {
   font-size: 1.125em;

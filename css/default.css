@@ -10820,11 +10820,11 @@ article.article .content h1 {
 }
 article.article .content h2 {
   font-size: 1.5em;
-  color: #ed6e84;
+  color: #ab5060;
 }
 article.article .content h3 {
   font-size: 1.1em;
-  text-decoration: underline;
+  color: #ed6e84;
 }
 article.article .content h4 {
   font-size: 1.125em;

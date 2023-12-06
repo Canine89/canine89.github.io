@@ -4,19 +4,22 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo 초간단 사용법 | Hexo</title>
+  <title>macOS-shift-space-kr-en-with-no-switch-popup.md | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="헥소 삽질 방지를 위해 쓴 글. 삽질이 계속되면 글도 업데이트된다. New Post1hexo new post &lt;post-name&gt;  Generate and Deploy1hexo deploy --generate  페이지 업데이트가 안 되는 것 같을 때는?12hexo cleanhexo deploy --generate">
+  <meta name="description" content="환경 : macOS Sonoma 14.1문제 : shift+space를 적용하고 싶은데 그놈의 popup이 계속 나와서 열 받는다.해결 : 했음 shift+space로 한&#x2F;영 변환기본적으로는 이 사이트를 보면 되는데… 여기서 하나 놓친게 있어서 포스팅 남김. plist를 수정하면 되는데 60번이 아니라 61번을 수정해야 함. 왜냐하면 61번이 ‘입">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo 초간단 사용법">
-<meta property="og:url" content="http://example.com/2023/12/06/hello-world/index.html">
+<meta property="og:title" content="macOS-shift-space-kr-en-with-no-switch-popup.md">
+<meta property="og:url" content="http://example.com/2023/12/06/macOS-shift-space-kr-en-with-no-switch-popup-md/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="헥소 삽질 방지를 위해 쓴 글. 삽질이 계속되면 글도 업데이트된다. New Post1hexo new post &lt;post-name&gt;  Generate and Deploy1hexo deploy --generate  페이지 업데이트가 안 되는 것 같을 때는?12hexo cleanhexo deploy --generate">
+<meta property="og:description" content="환경 : macOS Sonoma 14.1문제 : shift+space를 적용하고 싶은데 그놈의 popup이 계속 나와서 열 받는다.해결 : 했음 shift+space로 한&#x2F;영 변환기본적으로는 이 사이트를 보면 되는데… 여기서 하나 놓친게 있어서 포스팅 남김. plist를 수정하면 되는데 60번이 아니라 61번을 수정해야 함. 왜냐하면 61번이 ‘입">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-12-05T15:00:00.000Z">
-<meta property="article:modified_time" content="2023-12-06T08:27:54.780Z">
+<meta property="og:image" content="http://example.com/plist-01.png">
+<meta property="article:published_time" content="2023-12-06T08:28:55.000Z">
+<meta property="article:modified_time" content="2023-12-06T08:37:07.184Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="macOS팁, 한&#x2F;영, shift+space">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/plist-01.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -71,10 +74,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-macOS-shift-space-kr-en-with-no-switch-popup-md" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2023/12/06/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-12-05T15:00:00.000Z" itemprop="datePublished">2023-12-06</time>
+    <a href="/2023/12/06/macOS-shift-space-kr-en-with-no-switch-popup-md/" class="article-date">
+  <time class="dt-published" datetime="2023-12-06T08:28:55.000Z" itemprop="datePublished">2023-12-06</time>
 </a>
     
   </div>
@@ -85,7 +88,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Hexo 초간단 사용법
+      macOS-shift-space-kr-en-with-no-switch-popup.md
     </h1>
   
 
@@ -93,36 +96,37 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>헥소 삽질 방지를 위해 쓴 글. 삽질이 계속되면 글도 업데이트된다.</p>
-<h2 id="New-Post"><a href="#New-Post" class="headerlink" title="New Post"></a>New Post</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &lt;post-name&gt;</span><br></pre></td></tr></table></figure>
+        <p>환경 : macOS Sonoma 14.1<br>문제 : shift+space를 적용하고 싶은데 그놈의 popup이 계속 나와서 열 받는다.<br>해결 : 했음</p>
+<h2 id="shift-space로-한-영-변환"><a href="#shift-space로-한-영-변환" class="headerlink" title="shift+space로 한&#x2F;영 변환"></a>shift+space로 한&#x2F;영 변환</h2><p>기본적으로는 <a target="_blank" rel="noopener" href="https://seorenn.tistory.com/547">이 사이트</a>를 보면 되는데… 여기서 하나 놓친게 있어서 포스팅 남김. plist를 수정하면 되는데 60번이 아니라 61번을 수정해야 함. 왜냐하면 61번이 ‘입력 메뉴에서 다음 메뉴 선택’이라는 아주 짜증나는 옵션과 관련되어 있는데 이게 ‘languate swtich popup’을 띄우기 때문임. </p>
+<p><strong>01</strong> 다음 명령어를 눌러서 plist 수정 화면을 열고…</p>
+<blockquote>
+<p>xcode 깔려 있어야 함</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open ~/Library/Preferences/com.apple.symbolichotkeys.plist</span><br></pre></td></tr></table></figure>
 
-<h2 id="Generate-and-Deploy"><a href="#Generate-and-Deploy" class="headerlink" title="Generate and Deploy"></a>Generate and Deploy</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy --generate</span><br></pre></td></tr></table></figure>
-
-<h2 id="페이지-업데이트가-안-되는-것-같을-때는"><a href="#페이지-업데이트가-안-되는-것-같을-때는" class="headerlink" title="페이지 업데이트가 안 되는 것 같을 때는?"></a>페이지 업데이트가 안 되는 것 같을 때는?</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo deploy --generate</span><br></pre></td></tr></table></figure>
-
+<p><strong>02</strong> 다음 화면에서 61번 &gt; value &gt; parameters를 순서대로 열고 <strong>item 2를 131072로 수정한다.</strong><br><img src="/plist-01.png" alt="Alt text"></p>
+<p><strong>03</strong> 재부팅하면 그 꼴보기 싫은 ‘languate swtich popup’ 없이 한&#x2F;영 전환을 shift+space로 할 수 있게 됨.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/12/06/hello-world/" data-id="clpthklpo00002p0fgo4pau3u" data-title="Hexo 초간단 사용법" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/12/06/macOS-shift-space-kr-en-with-no-switch-popup-md/" data-id="clptin0m000008u0f28nxe3i4" data-title="macOS-shift-space-kr-en-with-no-switch-popup.md" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/macOS%ED%8C%81-%ED%95%9C-%EC%98%81-shift-space/" rel="tag">macOS팁, 한&#x2F;영, shift+space</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2023/12/06/macOS-shift-space-kr-en-with-no-switch-popup-md/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          macOS-shift-space-kr-en-with-no-switch-popup.md
-        
-      </div>
-    </a>
   
+    <a href="/2023/12/06/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hexo 초간단 사용법</div>
+    </a>
   
 </nav>
 

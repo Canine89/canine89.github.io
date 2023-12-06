@@ -69,6 +69,56 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-macOS-shift-space-kr-en-with-no-switch-popup-md" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/12/06/macOS-shift-space-kr-en-with-no-switch-popup-md/" class="article-date">
+  <time class="dt-published" datetime="2023-12-06T08:28:55.000Z" itemprop="datePublished">2023-12-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/12/06/macOS-shift-space-kr-en-with-no-switch-popup-md/">macOS-shift-space-kr-en-with-no-switch-popup.md</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>환경 : macOS Sonoma 14.1<br>문제 : shift+space를 적용하고 싶은데 그놈의 popup이 계속 나와서 열 받는다.<br>해결 : 했음</p>
+<h2 id="shift-space로-한-영-변환"><a href="#shift-space로-한-영-변환" class="headerlink" title="shift+space로 한&#x2F;영 변환"></a>shift+space로 한&#x2F;영 변환</h2><p>기본적으로는 <a target="_blank" rel="noopener" href="https://seorenn.tistory.com/547">이 사이트</a>를 보면 되는데… 여기서 하나 놓친게 있어서 포스팅 남김. plist를 수정하면 되는데 60번이 아니라 61번을 수정해야 함. 왜냐하면 61번이 ‘입력 메뉴에서 다음 메뉴 선택’이라는 아주 짜증나는 옵션과 관련되어 있는데 이게 ‘languate swtich popup’을 띄우기 때문임. </p>
+<p><strong>01</strong> 다음 명령어를 눌러서 plist 수정 화면을 열고…</p>
+<blockquote>
+<p>xcode 깔려 있어야 함</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open ~/Library/Preferences/com.apple.symbolichotkeys.plist</span><br></pre></td></tr></table></figure>
+
+<p><strong>02</strong> 다음 화면에서 61번 &gt; value &gt; parameters를 순서대로 열고 <strong>item 2를 131072로 수정한다.</strong><br><img src="/plist-01.png" alt="Alt text"></p>
+<p><strong>03</strong> 재부팅하면 그 꼴보기 싫은 ‘languate swtich popup’ 없이 한&#x2F;영 전환을 shift+space로 할 수 있게 됨.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/12/06/macOS-shift-space-kr-en-with-no-switch-popup-md/" data-id="clptin0m000008u0f28nxe3i4" data-title="macOS-shift-space-kr-en-with-no-switch-popup.md" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/macOS%ED%8C%81-%ED%95%9C-%EC%98%81-shift-space/" rel="tag">macOS팁, 한&#x2F;영, shift+space</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/12/06/hello-world/" class="article-date">
@@ -124,9 +174,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/macOS%ED%8C%81-%ED%95%9C-%EC%98%81-shift-space/" rel="tag">macOS팁, 한&#x2F;영, shift+space</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/macOS%ED%8C%81-%ED%95%9C-%EC%98%81-shift-space/" style="font-size: 10px;">macOS팁, 한/영, shift+space</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -143,6 +207,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2023/12/06/macOS-shift-space-kr-en-with-no-switch-popup-md/">macOS-shift-space-kr-en-with-no-switch-popup.md</a>
+          </li>
         
           <li>
             <a href="/2023/12/06/hello-world/">Hexo 초간단 사용법</a>

@@ -13,13 +13,13 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="환경 : macOS Sonoma 14.1문제 : shift+space를 적용하고 싶은데 그놈의 popup이 계속 나와서 열 받는다.해결 : 했음 shift+space로 한&#x2F;영 변환기본적으로는 이 사이트를 보면 되는데… 여기서 하나 놓친게 있어서 포스팅 남김. plist를 수정하면 되는데 60번이 아니라 61번을 수정해야 함. 왜냐하면 61번이 ‘입">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/plist-01.png">
+<meta property="og:image" content="http://example.com/images/2023-12-06-plist-01.png">
 <meta property="article:published_time" content="2023-12-06T08:28:55.000Z">
-<meta property="article:modified_time" content="2023-12-06T08:37:07.184Z">
+<meta property="article:modified_time" content="2023-12-06T08:39:37.082Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="macOS팁, 한&#x2F;영, shift+space">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/plist-01.png">
+<meta name="twitter:image" content="http://example.com/images/2023-12-06-plist-01.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -104,7 +104,7 @@
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open ~/Library/Preferences/com.apple.symbolichotkeys.plist</span><br></pre></td></tr></table></figure>
 
-<p><strong>02</strong> 다음 화면에서 61번 &gt; value &gt; parameters를 순서대로 열고 <strong>item 2를 131072로 수정한다.</strong><br><img src="/plist-01.png" alt="Alt text"></p>
+<p><strong>02</strong> 다음 화면에서 61번 &gt; value &gt; parameters를 순서대로 열고 <strong>item 2를 131072로 수정한다.</strong><br><img src="/images/2023-12-06-plist-01.png" alt="Alt text"></p>
 <p><strong>03</strong> 재부팅하면 그 꼴보기 싫은 ‘languate swtich popup’ 없이 한&#x2F;영 전환을 shift+space로 할 수 있게 됨.</p>
 
       

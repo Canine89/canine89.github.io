@@ -9,15 +9,14 @@
   <meta name="description" content="환경 : macOS Sonoma 14.1문제 : shift+space를 적용하고 싶은데 그놈의 popup이 계속 나와서 열 받는다.해결 : 했음 shift+space로 한&#x2F;영 변환기본적으로는 이 사이트를 보면 되는데… 여기서 하나 놓친게 있어서 포스팅 남김. plist를 수정하면 되는데 60번이 아니라 61번을 수정해야 함. 왜냐하면 61번이 ‘입">
 <meta property="og:type" content="article">
 <meta property="og:title" content="macOS에서 shift+space로 한&#x2F;영 변환 시 팝업 계속 떠서 열 받을 때">
-<meta property="og:url" content="https://canine89.github.io/2023/12/06/macOS-shift-space-kr-en-with-no-switch-popup-md/index.html">
+<meta property="og:url" content="https://canine89.github.io/2023/12/06/tip/macOS-shift-space-kr-en-with-no-switch-popup-md/index.html">
 <meta property="og:site_name" content="삽질 때문에 열받은 편집자 P">
 <meta property="og:description" content="환경 : macOS Sonoma 14.1문제 : shift+space를 적용하고 싶은데 그놈의 popup이 계속 나와서 열 받는다.해결 : 했음 shift+space로 한&#x2F;영 변환기본적으로는 이 사이트를 보면 되는데… 여기서 하나 놓친게 있어서 포스팅 남김. plist를 수정하면 되는데 60번이 아니라 61번을 수정해야 함. 왜냐하면 61번이 ‘입">
-<meta property="og:locale">
+<meta property="og:locale" content="ko_KR">
 <meta property="og:image" content="https://canine89.github.io/images/2023-12-06-plist-01.png">
 <meta property="article:published_time" content="2023-12-06T08:28:55.000Z">
-<meta property="article:modified_time" content="2023-12-07T00:13:24.564Z">
+<meta property="article:modified_time" content="2023-12-08T06:25:03.253Z">
 <meta property="article:author" content="편집자 P">
-<meta property="article:tag" content="macOS팁, 한&#x2F;영, shift+space">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://canine89.github.io/images/2023-12-06-plist-01.png">
   
@@ -64,22 +63,26 @@
         
           <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
         
-        <a class="nav-icon nav-search-btn" title="Suche"><span class="fa fa-search"></span></a>
+        <a class="nav-icon nav-search-btn" title="검색"><span class="fa fa-search"></span></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://canine89.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="검색"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://canine89.github.io"></form>
       </div>
     </div>
   </div>
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-macOS-shift-space-kr-en-with-no-switch-popup-md" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-tip/macOS-shift-space-kr-en-with-no-switch-popup-md" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2023/12/06/macOS-shift-space-kr-en-with-no-switch-popup-md/" class="article-date">
+    <a href="/2023/12/06/tip/macOS-shift-space-kr-en-with-no-switch-popup-md/" class="article-date">
   <time class="dt-published" datetime="2023-12-06T08:28:55.000Z" itemprop="datePublished">2023-12-06</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/tip/">tip</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -110,20 +113,18 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://canine89.github.io/2023/12/06/macOS-shift-space-kr-en-with-no-switch-popup-md/" data-id="clptin0m000008u0f28nxe3i4" data-title="macOS에서 shift+space로 한/영 변환 시 팝업 계속 떠서 열 받을 때" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://canine89.github.io/2023/12/06/tip/macOS-shift-space-kr-en-with-no-switch-popup-md/" data-id="clpw8yend0003tk0fcbs0hzax" data-title="macOS에서 shift+space로 한/영 변환 시 팝업 계속 떠서 열 받을 때" class="article-share-link"><span class="fa fa-share">공유</span></a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/macOS%ED%8C%81-%ED%95%9C-%EC%98%81-shift-space/" rel="tag">macOS팁, 한&#x2F;영, shift+space</a></li></ul>
-
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2023/12/07/my-macOS-setting-2023-12-07-md/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Neuer</strong>
+    <a href="/2023/12/07/tool/my-macOS-setting-2023-12-07-md/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">최신</strong>
       <div class="article-nav-title">
         
           my-macOS-setting-2023-12-07.md
@@ -132,8 +133,8 @@
     </a>
   
   
-    <a href="/2023/12/06/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Älter</strong>
+    <a href="/2023/12/06/tool/how-to-hexo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">이전</strong>
       <div class="article-nav-title">Hexo 초간단 사용법</div>
     </a>
   
@@ -148,32 +149,25 @@
           <aside id="sidebar">
   
     
-
-  
-    
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">카테고리</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/flutter-error/" rel="tag">flutter, error</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/macOS-%EC%84%B8%ED%8C%85/" rel="tag">macOS 세팅</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/macOS%ED%8C%81-%ED%95%9C-%EC%98%81-shift-space/" rel="tag">macOS팁, 한&#x2F;영, shift+space</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EC%9B%8C%EB%93%9C-%EC%8A%A4%ED%83%80%EC%9D%BC/" rel="tag">워드, 스타일</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/dev/">dev</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/tip/">tip</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/tool/">tool</a></li></ul>
     </div>
   </div>
 
 
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/flutter-error/" style="font-size: 10px;">flutter, error</a> <a href="/tags/macOS-%EC%84%B8%ED%8C%85/" style="font-size: 10px;">macOS 세팅</a> <a href="/tags/macOS%ED%8C%81-%ED%95%9C-%EC%98%81-shift-space/" style="font-size: 10px;">macOS팁, 한/영, shift+space</a> <a href="/tags/%EC%9B%8C%EB%93%9C-%EC%8A%A4%ED%83%80%EC%9D%BC/" style="font-size: 10px;">워드, 스타일</a>
-    </div>
-  </div>
 
   
     
+  
+    
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">아카이브</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">12월 2023</a></li></ul>
     </div>
   </div>
 
@@ -181,28 +175,28 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">최근 포스트</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2023/12/08/how-to-word-editing-itbook-2023-12-08-md/">워드로 IT 책 쉽게 만드는 방법(편집자 편)</a>
+            <a href="/2023/12/08/tip/how-to-word-editing-itbook-2023-12-08-md/">워드로 IT 책 쉽게 만드는 방법(편집자 편)</a>
           </li>
         
           <li>
-            <a href="/2023/12/07/my-espanso-setting-2023-12-07-md/">내 espanso setting.md</a>
+            <a href="/2023/12/07/tool/my-espanso-setting-2023-12-07-md/">내 espanso setting.md</a>
           </li>
         
           <li>
-            <a href="/2023/12/07/flutter-multidex-error-md/">flutter-multidex-error.md</a>
+            <a href="/2023/12/07/dev/flutter-multidex-error-md/">flutter-multidex-error.md</a>
           </li>
         
           <li>
-            <a href="/2023/12/07/my-macOS-setting-2023-12-07-md/">my-macOS-setting-2023-12-07.md</a>
+            <a href="/2023/12/07/tool/my-macOS-setting-2023-12-07-md/">my-macOS-setting-2023-12-07.md</a>
           </li>
         
           <li>
-            <a href="/2023/12/06/macOS-shift-space-kr-en-with-no-switch-popup-md/">macOS에서 shift+space로 한/영 변환 시 팝업 계속 떠서 열 받을 때</a>
+            <a href="/2023/12/06/tip/macOS-shift-space-kr-en-with-no-switch-popup-md/">macOS에서 shift+space로 한/영 변환 시 팝업 계속 떠서 열 받을 때</a>
           </li>
         
       </ul>

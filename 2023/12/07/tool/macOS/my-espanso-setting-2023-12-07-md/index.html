@@ -12,7 +12,7 @@
 
 
 
-  <meta name="description" content="macOS에서 shift+space로 한/영 변환 시 팝업 계속 떠서 열 받을 때"/>
+  <meta name="description" content="내 espanso setting.md"/>
 
 
 
@@ -30,22 +30,20 @@
 
 
 
-<link rel="canonical" href="https://canine89.github.io/2023/12/06/tip/macOS-shift-space-kr-en-with-no-switch-popup-md/"/>
+<link rel="canonical" href="https://canine89.github.io/2023/12/07/tool/macOS/my-espanso-setting-2023-12-07-md/"/>
 
 
-<meta name="description" content="환경 : macOS Sonoma 14.1문제 : shift+space를 적용하고 싶은데 그놈의 popup이 계속 나와서 열 받는다.해결 : 했음 shift+space로 한&#x2F;영 변환기본적으로는 이 사이트를 보면 되는데… 여기서 하나 놓친게 있어서 포스팅 남김. plist를 수정하면 되는데 60번이 아니라 61번을 수정해야 함. 왜냐하면 61번이 ‘입">
+<meta name="description" content="내 espanso setting123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354matches:  - trigger: &quot;@&gt;&quot;    replace: ▶  - trigger: &quot;@&lt;&quot;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="macOS에서 shift+space로 한&#x2F;영 변환 시 팝업 계속 떠서 열 받을 때">
-<meta property="og:url" content="https://canine89.github.io/2023/12/06/tip/macOS-shift-space-kr-en-with-no-switch-popup-md/index.html">
+<meta property="og:title" content="내 espanso setting.md">
+<meta property="og:url" content="https://canine89.github.io/2023/12/07/tool/macOS/my-espanso-setting-2023-12-07-md/index.html">
 <meta property="og:site_name" content="삽질 때문에 열받은 편집자 P">
-<meta property="og:description" content="환경 : macOS Sonoma 14.1문제 : shift+space를 적용하고 싶은데 그놈의 popup이 계속 나와서 열 받는다.해결 : 했음 shift+space로 한&#x2F;영 변환기본적으로는 이 사이트를 보면 되는데… 여기서 하나 놓친게 있어서 포스팅 남김. plist를 수정하면 되는데 60번이 아니라 61번을 수정해야 함. 왜냐하면 61번이 ‘입">
+<meta property="og:description" content="내 espanso setting123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354matches:  - trigger: &quot;@&gt;&quot;    replace: ▶  - trigger: &quot;@&lt;&quot;">
 <meta property="og:locale" content="ko_KR">
-<meta property="og:image" content="https://canine89.github.io/images/2023-12-06-plist-01.png">
-<meta property="article:published_time" content="2023-12-06T08:28:55.000Z">
-<meta property="article:modified_time" content="2023-12-08T06:25:03.253Z">
+<meta property="article:published_time" content="2023-12-07T04:48:57.000Z">
+<meta property="article:modified_time" content="2023-12-12T03:02:57.580Z">
 <meta property="article:author" content="편집자 P">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://canine89.github.io/images/2023-12-06-plist-01.png">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1"/>
@@ -98,7 +96,7 @@
 
 
 
-    <title> macOS에서 shift+space로 한/영 변환 시 팝업 계속 떠서 열 받을 때 - 삽질 때문에 열받은 편집자 P </title>
+    <title> 내 espanso setting.md - 삽질 때문에 열받은 편집자 P </title>
   <meta name="generator" content="Hexo 7.0.0"></head>
 
   <body>
@@ -159,12 +157,12 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          macOS에서 shift+space로 한/영 변환 시 팝업 계속 떠서 열 받을 때
+          내 espanso setting.md
         
       </h1>
 
       <time class="post-time">
-          12월 06 2023
+          12월 07 2023
       </time>
     </header>
 
@@ -172,17 +170,7 @@
 
     
             <div class="post-content">
-            <p>환경 : macOS Sonoma 14.1<br>문제 : shift+space를 적용하고 싶은데 그놈의 popup이 계속 나와서 열 받는다.<br>해결 : 했음</p>
-<h2><span id="shiftspace로-한x2f영-변환">shift+space로 한&#x2F;영 변환</span></h2><p>기본적으로는 <a target="_blank" rel="noopener" href="https://seorenn.tistory.com/547">이 사이트</a>를 보면 되는데… 여기서 하나 놓친게 있어서 포스팅 남김. plist를 수정하면 되는데 60번이 아니라 61번을 수정해야 함. 왜냐하면 61번이 ‘입력 메뉴에서 다음 메뉴 선택’이라는 아주 짜증나는 옵션과 관련되어 있는데 이게 ‘languate swtich popup’을 띄우기 때문임. </p>
-<p><strong>01</strong> 다음 명령어를 눌러서 plist 수정 화면을 열고…</p>
-<blockquote>
-<p>xcode 깔려 있어야 함</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open ~/Library/Preferences/com.apple.symbolichotkeys.plist</span><br></pre></td></tr></table></figure>
-
-<p><strong>02</strong> 다음 화면에서 61번 &gt; value &gt; parameters를 순서대로 열고 <strong>item 2를 131072로 수정한다.</strong><br><img src="/images/2023-12-06-plist-01.png" alt="Alt text"></p>
-<p><strong>03</strong> 재부팅하면 그 꼴보기 싫은 ‘languate swtich popup’ 없이 한&#x2F;영 전환을 shift+space로 할 수 있게 됨.</p>
-
+            <h1><span id="내-espanso-setting">내 espanso setting</span></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">matches:</span><br><span class="line">  - trigger: &quot;@&gt;&quot;</span><br><span class="line">    replace: ▶</span><br><span class="line">  - trigger: &quot;@&lt;&quot;</span><br><span class="line">    replace: ◀</span><br><span class="line">  - trigger: &quot;@,&quot;</span><br><span class="line">    replace: ▼</span><br><span class="line">  - trigger: &quot;\\&gt;&gt;&quot;</span><br><span class="line">    replace: 》</span><br><span class="line">  - trigger: &quot;\\&lt;&lt;&quot;</span><br><span class="line">    replace: 《</span><br><span class="line">  - trigger: &quot;@1&quot;</span><br><span class="line">    replace: ➊</span><br><span class="line">  - trigger: &quot;@2&quot;</span><br><span class="line">    replace: ➋</span><br><span class="line">  - trigger: &quot;@3&quot;</span><br><span class="line">    replace: ➌</span><br><span class="line">  - trigger: &quot;@4&quot;</span><br><span class="line">    replace: ➍</span><br><span class="line">  - trigger: &quot;@5&quot;</span><br><span class="line">    replace: ➎</span><br><span class="line">  - trigger: &quot;@6&quot;</span><br><span class="line">    replace: ➏</span><br><span class="line">  - trigger: &quot;@7&quot;</span><br><span class="line">    replace: ➐</span><br><span class="line">  - trigger: &quot;@8&quot;</span><br><span class="line">    replace: ➑</span><br><span class="line">  - trigger: &quot;@9&quot;</span><br><span class="line">    replace: ➒</span><br><span class="line">  - trigger: &quot;@-&quot;</span><br><span class="line">    replace: ━</span><br><span class="line">  - trigger: &quot;\\dot&quot;</span><br><span class="line">    replace: ·</span><br><span class="line">  - trigger: &quot;-&gt;&quot;</span><br><span class="line">    replace: ➝</span><br><span class="line">  - trigger: &quot;\\...&quot;</span><br><span class="line">    replace: ... 생략 ...</span><br><span class="line">  - trigger: &quot;\\todo&quot;</span><br><span class="line">    replace: &lt;todo&gt; 01</span><br><span class="line">  - trigger: &quot;\\note&quot;</span><br><span class="line">    replace: &lt;note&gt;&lt;/note&gt;</span><br><span class="line">  - trigger: &quot;\\lv&quot;</span><br><span class="line">    replace: 단계</span><br><span class="line">  - trigger: &quot;@lorem&quot;</span><br><span class="line">    replace: &quot;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&quot;</span><br><span class="line">  - trigger: &quot;@desk&quot;</span><br><span class="line">    replace: &quot;C:\\Users\\phk70\\Desktop&quot;</span><br><span class="line">  - trigger: &quot;:date&quot;</span><br><span class="line">    replace: &quot;&#123;&#123;mytime&#125;&#125;&quot;</span><br><span class="line">    vars:</span><br><span class="line">      - name: mytime</span><br><span class="line">        type: date</span><br><span class="line">        params:</span><br><span class="line">          format: &quot;%Y.%m.%d.&quot;</span><br></pre></td></tr></table></figure>
             </div>
           
 
@@ -194,15 +182,15 @@
         
   <nav class="post-nav">
     
-      <a class="prev" href="/2023/12/07/tool/macOS/my-macOS-setting-2023-12-07-md/">
+      <a class="prev" href="/2023/12/08/tip/how-to-word-editing-itbook-2023-12-08-md/">
         <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">my-macOS-setting-2023-12-07.md</span>
+        <span class="prev-text nav-default">워드로 IT 책 쉽게 만드는 방법(편집자 편)</span>
         <span class="prev-text nav-mobile">Prev</span>
       </a>
     
     
-      <a class="next" href="/2023/12/06/tool/hexo/how-to-hexo/">
-        <span class="next-text nav-default">Hexo 초간단 사용법</span>
+      <a class="next" href="/2023/12/07/dev/flutter-multidex-error/">
+        <span class="next-text nav-default">flutter-multidex-error.md</span>
         <span class="prev-text nav-mobile">Next</span>
         <i class="iconfont icon-right"></i>
       </a>

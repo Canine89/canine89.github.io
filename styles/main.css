@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+:root {
+  --main-bg: #f9f9fb;
+  --main-color: #222;
+  --accent: #0070f3;
+  --accent-light: #e3f0ff;
+  --border: #eee;
+  --card-bg: #fff;
+  --meta: #888;
+  --badge-bg: #f0f0f7;
+  --badge-color: #0070f3;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: var(--main-bg);
+  color: var(--main-color);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+nav {
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.2em 0.5em;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+nav a:hover {
+  background: var(--accent-light);
+}
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+footer {
+  text-align: center;
+  color: #aaa;
+  margin: 2rem 0 1rem 0;
+  font-size: 0.95rem;
+}
+.post h1 {
+  margin-top: 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.meta {
+  color: var(--meta);
+  font-size: 0.98rem;
+  margin-bottom: 1.5rem;
+}
+ul, ol {
+  padding-left: 1.5em;
+}
+li {
+  margin-bottom: 0.3em;
+}
+a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+.badge {
+  display: inline-block;
+  background: var(--badge-bg);
+  color: var(--badge-color);
+  border-radius: 8px;
+  padding: 0.1em 0.7em;
+  font-size: 0.92em;
+  margin-right: 0.3em;
+  margin-bottom: 0.2em;
+}
+/* 코드 하이라이트 (light) */
+pre, code {
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+  background: #f5f7fa;
+  color: #2d3748;
+  border-radius: 6px;
+  padding: 0.2em 0.5em;
+  font-size: 1em;
+}
+pre {
+  padding: 1em;
+  overflow-x: auto;
+  margin: 1.5em 0;
+}
+code {
+  padding: 0.1em 0.3em;
+}
+/* 반응형 */
+@media (max-width: 900px) {
+  main {
+    max-width: 98vw;
+    padding: 1.2rem;
+  }
+  nav {
+    padding: 1rem 0.5rem;
+    gap: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    padding: 0.7rem;
+    border-radius: 0;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .post h1 {
+    font-size: 1.4rem;
+  }
+}
+/* 태그/카테고리/아카이브 뱃지 스타일 */
+.tags, .categories, .archives {
+  margin: 1em 0;
+}
+.tags .badge, .categories .badge, .archives .badge {
+  margin-right: 0.5em;
+  margin-bottom: 0.3em;
+}
+/* 목록 스타일 개선 */
+ul {
+  list-style: disc inside;
+}
+/* 본문 가독성 */
+p, li {
+  line-height: 1.7;
+}
